@@ -1,1 +1,54 @@
-# i3config
+# i3config 
+Added compton for transparent background
+Added new theme for status bar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
