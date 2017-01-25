@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -90,6 +90,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# focus follows mouse
+focus_follows_mouse no
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -158,9 +161,9 @@ bar {
         position top
         status_command i3status
         colors {
-      background #002b36
-      statusline #839496
-      separator  #586e75
+      background #002233
+      statusline #66ccff
+      separator  #66ccff
       focused_workspace  #b58900 #b58900 #002b36
       active_workspace   #586e75 #586e75 #002b36
       inactive_workspace #073642 #002b36 #839496
@@ -181,13 +184,16 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id compton
 
 # Wallpaper
-# exec_always feh --bg-scale /home/nathan/Pictures/Mount_Everest.jpg
 # exec_always feh --bg-max /home/nathan/Pictures/Mount_Everest.jpg
-exec_always feh --bg-scale /home/nathan/Pictures/wallpaper/icylakesunrise.jpg
-# Multi-Screen use "arandr" to get the info
-# vert.sh
-exec_always --no-startup-id xrandr --output HDMI2 --off --output HDMI1 --off --output DP1 --mode 1600x900 --pos 0x0 --rotate normal --output eDP1 --primary --mode 1366x768 --pos 0x900 --rotate normal --output VIRTUAL1 --off
+exec_always feh --bg-scale /home/nathan/Pictures/beachsunset.jpg
+# exec_always feh --bg-scale /home/nathan/Pictures/wallpaper/icylakesunrise.jpg
+# Multi-Screen use "arandr" to get the inf
+#exec_always feh --bg-tile /home/nathan/Pictures/wallpaper/looloo.jpg
 
+# vert.sh
+# exec_always --no-startup-id xrandr --output HDMI2 --off --output HDMI1 --off --output DP1 --mode 1600x900 --pos 0x0 --rotate normal --output eDP1 --primary --mode 1366x768 --pos 0x900 --rotate normal --output VIRTUAL1 --off
+# rightside.sh
+exec_always --no-startup-id xrandr --output HDMI2 --off --output HDMI1 --off --output DP1 --mode 1600x900 --pos 1366x0 --rotate normal --output eDP1 --primary --mode 1366x768 --pos 0x145 --rotate normal --output VIRTUAL1 --off
 # Disable trackpad
 exec_always xinput disable 13
 
