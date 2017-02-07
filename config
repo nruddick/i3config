@@ -185,8 +185,9 @@ exec_always --no-startup-id compton
 
 # Wallpaper
 # exec_always feh --bg-max /home/nathan/Pictures/Mount_Everest.jpg
-exec_always feh --bg-scale /home/nathan/Pictures/beachsunset.jpg
 # exec_always feh --bg-scale /home/nathan/Pictures/wallpaper/icylakesunrise.jpg
+#exec_always feh --bg-scale /home/nathan/Pictures/beachsunset.jpg
+exec_always feh --bg-tile /home/nathan/Pictures/wallpaper/dark_mosaic.png
 # Multi-Screen use "arandr" to get the inf
 #exec_always feh --bg-tile /home/nathan/Pictures/wallpaper/looloo.jpg
 
